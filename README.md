@@ -9,7 +9,7 @@ Adds support for drawing and editing features on
 
 
 See
-[API.md](https://github.com/birkskyum/maplibre-gl-draw/blob/main/docs/API.md) for
+[API.md](https://github.com/birkskyum/maplibre-gl-draw/blob/main/markdown-files/API.md) for
 documentation.
 
 ### Installing
@@ -74,20 +74,20 @@ map.on("load", function () {
 });
 ```
 
-### See [API.md](https://github.com/birkskyum/maplibre-gl-draw/blob/main/docs/API.md) for complete reference.
+### See [API.md](https://github.com/birkskyum/maplibre-gl-draw/blob/main/markdown-files/API.md) for complete reference.
 
 ### Enhancements and New Interactions
 
 For additional functionality
-[check out our list of custom modes](https://github.com/birkskyum/maplibre-gl-draw/blob/main/docs/MODES.md#available-custom-modes).
+[check out our list of custom modes](https://github.com/birkskyum/maplibre-gl-draw/blob/main/markdown-files/MODES.md#available-custom-modes).
 
 MapLibre Draw accepts functionality changes after the functionality has been
 proven out via a
-[custom mode](https://github.com/birkskyum/maplibre-gl-draw/blob/main/docs/MODES.md#creating-modes-for-maplibre-draw).
+[custom mode](https://github.com/birkskyum/maplibre-gl-draw/blob/main/markdown-files/MODES.md#creating-modes-for-maplibre-draw).
 This lets users experiment and validate their mode before entering a review
 process, hopefully promoting innovation. When you write a custom mode, please
 open a PR adding it to our
-[list of custom modes](https://github.com/birkskyum/maplibre-gl-draw/blob/main/docs/MODES.md#available-custom-modes).
+[list of custom modes](https://github.com/birkskyum/maplibre-gl-draw/blob/main/markdown-files/MODES.md#available-custom-modes).
 
 ### Developing and testing
 
