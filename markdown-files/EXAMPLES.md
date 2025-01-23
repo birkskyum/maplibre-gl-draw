@@ -3,7 +3,7 @@
 ## Styling
 
 See
-[API.md#styling-draw](https://github.com/mapbox/maplibre-gl-draw/blob/main/docs/API.md#styling-draw)
+[API.md#styling-draw](https://github.com/birkskyum/maplibre-gl-draw/blob/main/markdown-files/API.md#styling-draw)
 for a complete styling reference.
 
 ### points
