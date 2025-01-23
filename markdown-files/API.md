@@ -52,7 +52,7 @@ All of the following options are optional.
 - `modes`, Object: over ride the default modes with your own.
   `MapLibreDraw.modes` can be used to see the default values. More information
   on custom modes
-  [can be found here](https://github.com/mapbox/maplibre-gl-draw/blob/main/docs/MODES.md).
+  [can be found here](https://github.com/birkskyum/maplibre-gl-draw/blob/main/markdown-files/MODES.md).
 - `defaultMode`, String (default: `'simple_select'`): the mode (from `modes`)
   that user will first land in.
 - `userProperties`, boolean (default: `false`): properties of a feature will
@@ -64,7 +64,7 @@ All of the following options are optional.
 By default MapLibreDraw ships with a few modes. These modes aim to cover the
 basic needed functionally for MapLibreDraw to create the core GeoJSON feature
 types. Along with these, MapLibreDraw also supports
-[custom modes. Click here for more details](https://github.com/mapbox/maplibre-gl-draw/blob/main/docs/MODES.md).
+[custom modes. Click here for more details](https://github.com/birkskyum/maplibre-gl-draw/blob/main/markdown-files/MODES.md).
 
 The mode name strings are available as an enum at `Draw.modes`.
 
@@ -627,7 +627,7 @@ Following this event will enable you know if `draw.trash()`,
 ## Styling Draw
 
 Draw uses a map style that adheres to the
-[MapLibre GL Style Spec](https://www.mapbox.com/mapbox-gl-style-spec/) with a
+[MapLibre GL Style Spec](https://maplibre.org/maplibre-style-spec/) with a
 few caveats.
 
 **source**
@@ -665,7 +665,7 @@ sure they do not clash with the Draw properties.
 ### Example Custom Styles
 
 See
-[EXAMPLES.md](https://github.com/mapbox/maplibre-gl-draw/blob/main/docs/EXAMPLES.md)
+[EXAMPLES.md](https://github.com/birkskyum/maplibre-gl-draw/blob/main/markdown-files/EXAMPLES.md)
 for examples of custom styles.
 
 ## Using Draw with MapLibre GL JS's `queryRenderedFeatures`
