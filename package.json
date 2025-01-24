@@ -48,7 +48,7 @@
     "@std/assert": "npm:@jsr/std__assert@^1.0.8",
     "@turf/bbox-clip": "^7.1.0",
     "@turf/centroid": "^7.1.0",
-    "@types/geojson": "^7946.0.14",
+    "@types/geojson": "^7946.0.16",
     "@types/mapbox__point-geometry": "^0.1.4",
     "@types/node": "^22.10.1",
     "@types/numeral": "^2.0.5",
