@@ -4,7 +4,8 @@ import type {
   CircleLayerSpecification,
   FillLayerSpecification,
   LineLayerSpecification,
-} from "maplibre-gl";
+  SymbolLayerSpecification,
+} from 'maplibre-gl';
 
 const blue = "#3bb2d0";
 const orange = "#fbb03b";
@@ -38,9 +39,10 @@ export type ThemeLayerId =
 
 export type Theme = Array<
   (
-    | Partial<FillLayerSpecification>
+     Partial<FillLayerSpecification>
     | Partial<LineLayerSpecification>
     | Partial<CircleLayerSpecification>
+    | Partial<SymbolLayerSpecification>
   ) & { id: ThemeLayerId }
 >;
 
