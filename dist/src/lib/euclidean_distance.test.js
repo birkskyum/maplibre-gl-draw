@@ -1,8 +1,0 @@
-import { test } from "vitest";
-import { assertEquals } from "@std/assert";
-import { euclideanDistance } from "./euclidean_distance.ts";
-test("euclideanDistance", () => {
-    assertEquals(euclideanDistance({ x: 1, y: 1 }, { x: 4, y: 4 }), 4.242640687119285);
-    assertEquals(euclideanDistance({ x: -10, y: 99.486354 }, { x: 0, y: -0.324736 }), 100.31078549681536);
-});
-//# sourceMappingURL=euclidean_distance.test.js.map

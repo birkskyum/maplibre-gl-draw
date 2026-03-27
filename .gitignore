@@ -2,8 +2,7 @@ node_modules/
 .DS_Store
 npm-debug.log
 .vscode/
-dist/bench.js
-dist/bench.js.map
+dist
 coverage/
 .nyc_output/
 debug/access_token_generated.js

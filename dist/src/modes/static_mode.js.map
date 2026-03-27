@@ -1,1 +1,0 @@
-{"version":3,"file":"static_mode.js","sourceRoot":"","sources":["../../../src/modes/static_mode.ts"],"names":[],"mappings":"AACA,OAAO,EAAE,QAAQ,EAAE,MAAM,gBAAgB,CAAC;AAE1C,MAAM,OAAO,UAAW,SAAQ,QAAQ;IACtC,OAAO;QACL,IAAI,CAAC,kBAAkB,EAAE,CAAC,CAAC,oDAAoD;QAC/E,OAAO,EAAE,CAAC;IACZ,CAAC;IAED,iBAAiB,CAAC,KAAK,EAAE,OAAO,EAAE,OAAO;QACvC,OAAO,CAAC,OAAO,CAAC,CAAC;IACnB,CAAC;CACF"}

@@ -1,5 +1,5 @@
 {
-  "name": "@jsr/birkskyum__maplibre-gl-draw",
+  "name": "maplibre-gl-draw",
   "description": "A drawing component for MapLibre GL JS",
   "author": "Birk Skyum",
   "license": "ISC",
@@ -12,15 +12,14 @@
     "url": "https://github.com/birkskyum/maplibre-gl-draw/issues"
   },
   "main": "dist/maplibre-gl-draw.js",
-  "version": "2.1.2",
+  "version": "2.2.0",
   "exports": {
     ".": {
       "types": "./dist/src/index.d.ts",
-      "default": "./src/index.js"
+      "default": "./dist/maplibre-gl-draw.js"
     },
     "./dist/maplibre-gl-draw.css": "./dist/maplibre-gl-draw.css"
   },
-  "_jsr_revision": 11,
   "files": [
     "dist/*",
     "src/"
@@ -31,8 +30,9 @@
     "format": "biome format --write",
     "test": "vitest",
     "coverage": "node --test --import ./test/mock-browser.js --experimental-test-coverage",
-    "build": "rollup -c",
-    "build-min": "rollup -c --environment MINIFY:true",
+    "build": "rollup -c && cp src/maplibre-gl-draw.css dist/maplibre-gl-draw.css",
+    "build-min": "rollup -c --environment MINIFY:true && cp src/maplibre-gl-draw.css dist/maplibre-gl-draw.css",
+    "prepare": "run-s build build-min",
     "prepublishOnly": "run-s build build-min",
     "watch": "rollup -c --watch",
     "start-server": "vite --config vite.config.js",
@@ -48,7 +48,7 @@
     "@rollup/plugin-replace": "^6.0.1",
     "@rollup/plugin-terser": "^0.4.4",
     "@rollup/plugin-typescript": "^12.1.1",
-    "@std/assert": "npm:@jsr/std__assert@^1.0.8",
+    "@std/assert": "jsr:@std/assert@^1.0.8",
     "@turf/bbox-clip": "^7.1.0",
     "@turf/centroid": "^7.1.0",
     "@types/geojson": "^7946.0.14",
@@ -69,8 +69,8 @@
     "vitest": "^2.1.8"
   },
   "dependencies": {
-    "@birkskyum/geojson-area": "npm:@jsr/birkskyum__geojson-area@^1.0.2",
-    "@birkskyum/geojson-normalize": "npm:@jsr/birkskyum__geojson-normalize@^1.0.3",
+    "@birkskyum/geojson-area": "jsr:@birkskyum/geojson-area@^1.0.2",
+    "@birkskyum/geojson-normalize": "jsr:@birkskyum/geojson-normalize@^1.0.3",
     "@mapbox/point-geometry": "^1.1.0",
     "@turf/turf": "^7.1.0",
     "fast-deep-equal": "^3.1.3",

@@ -1,8 +1,0 @@
-{
-  "name": "@birkskyum/maplibre-gl-draw",
-  "version": "2.1.2",
-  "license": "ISC",
-  "exports": {
-    ".":"./src/index.ts"
-  }
-}

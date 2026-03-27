@@ -12,14 +12,21 @@ import typescript from "@rollup/plugin-typescript";
 export default {
   input: ["./src/index.ts"],
   output: {
-    name: "MapLibreDraw",
     file: outputFile,
-    format: "umd",
+    format: "es",
     sourcemap: true,
     indent: false,
   },
   treeshake: true,
   plugins: [
+    {
+      name: "svg-string",
+      transform(code, id) {
+        if (id.endsWith(".svg")) {
+          return `export default ${JSON.stringify(code)};`;
+        }
+      },
+    },
     minified
       ? terser({
         ecma: 2020,
@@ -37,6 +44,8 @@ export default {
     }),
     typescript({
       tsconfig: "./tsconfig.json",
+      declaration: true,
+      declarationDir: "dist",
     }),
   ],
 };
